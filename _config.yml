@@ -1,0 +1,94 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: SDG Solution Space
+email: hello@sdgsolutionspace.org
+description:
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://sdgsolutionspace.org" # the base hostname & protocol for your site
+twitter_username: sdgsolspace
+github_username:  sdgsolutionspace
+#linkedin_username: opengeneva
+#youtube_username: opengeneva
+#facebook_username: opengeneva
+port : 4001
+
+#site.google_analytics : UA-56851854-
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+excerpt_separator: <!--more-->
+
+
+# collections
+
+collections:
+  people:
+    output : true
+  projects:
+    output : true
+  events :
+    output : true
+
+
+# translation dictionary
+t:
+  en:
+    home:
+      name: "Home"
+      url: "/"
+      display : true
+    news:
+      name: "News"
+      url: "/news/"
+      display : false
+    events :
+      name: "Events"
+      url: "/events/"
+      display : true
+
+    people:
+      name: "People"
+      url: "/people/"
+      display : true
+    projects:
+      name: "Projects"
+      url: "/projects/"
+      display : true
+    fablab :
+      name: "Fablab"
+      url: "/fablab/"
+      display : true
+    education :
+      name: "Education"
+      url: "/education/"
+      display : false
+    media:
+      name: "Media"
+      url: "/media/"
+      display : true
+
+    about:
+      name: "About"
+      url: "/about/"
+      display : true
